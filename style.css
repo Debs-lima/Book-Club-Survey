@@ -1,0 +1,141 @@
+:root {
+  --action-color: rgba(58, 58, 158, 0.4);
+  --header-color: rgba(255, 255, 255, 0.25);
+  --main-color: rgba(236, 187, 63, 0.25);
+  --yellow: rgba(236, 187, 63, 0.8);
+  --black: rgb(35, 35, 35);
+  --white: rgb(206, 212, 218);
+  --gray: rgb(109, 111, 112);
+}
+
+body {
+  background-image: url(pexels-jess-bailey-designs-762686.jpg);
+  background-size: cover;
+  }
+
+.container {
+  max-width: 1024px;
+  min-width: 360px;
+  margin: auto;
+  display: block;
+  font-family: 'Cutive Mono', monospace;
+}
+
+.title-container {
+  text-align: center;
+  display: block;
+  background-color: var(--header-color);
+  border-radius: 4px;
+  padding: 1px 0;
+  margin-bottom: 5px;
+}
+
+.title {
+  font-size: 55px;
+  letter-spacing: 4px;
+  word-spacing: -10px;
+  margin-bottom: 0; 
+}
+
+.description {
+  font-size: 25px;
+  font-weight: 550;
+  letter-spacing: 2px;
+}
+
+#survey-form {
+  background-color: var(--main-color);
+  text-align: center;
+  display: block;
+  border-radius: 4px;
+  font-size: 28px;
+  padding-top: 30px;
+  color: var(--black);
+}
+
+#form-group {
+  width: 60%;
+  margin: auto;
+  text-align: left;
+  letter-spacing: 1px; 
+}
+
+#name-label, #email-label, #number-label {
+  display: block;
+}
+
+#name, #email, #number {
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border: 1px solid var(--white);
+  border-radius: 4px;
+  height: 40px;
+  font-size: 18px;
+  padding-left: 8px;
+  color: var(--gray);
+  appearance: none;
+  font-family: 'Cutive Mono', monospace;
+}
+
+input, textarea{
+  outline-style: none;
+}
+
+.input-label {
+  margin-bottom: 10px;
+}
+
+select {
+  appearance: none;
+  font-family: 'Cutive Mono', monospace;
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 10px;
+  border: 1px solid var(--white);
+  border-radius: 4px;
+  height: 40px;
+  font-size: 18px;
+  padding-left: 8px;
+  color: var(--gray);
+}
+
+option {
+  margin-top: 5px;
+}
+
+textarea {
+  appearance: none;
+  font-family: 'Cutive Mono', monospace;
+  width: 100%;
+  border: 1px solid var(--white);
+  border-radius: 4px;
+  font-size: 18px;
+  color: var(--gray);
+}
+
+
+button {
+  margin-bottom: 30px;
+  width: 200px;
+  height: 50px;
+  border-radius: 4px;
+  border: 1px solid var(--gray);
+  background: var(--yellow);
+  font-size: 18px;
+  letter-spacing: 2px;
+  color: var(--black);
+  cursor: pointer;
+}
+
+#submit:hover {
+  box-shadow: 2px 2px 5px var(--gray);
+  background: var(--header-color);
+  border-color: var(--black);
+  font-size: 20px;
+}
+
+input:focus, textarea:focus {
+  outline-style: solid;
+  outline-color: var(--gray);
+}

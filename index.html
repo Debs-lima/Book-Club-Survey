@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Book Club Survey</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="title-container">
+        <h1 class="title">Book Club Survey Form</h1>
+        <p class="description"> This is a form to map our readers profile</p>
+      </header>
+      <main>
+        <form id="survey-form">
+          <div id="form-group">
+            <label id="name-label"> Name </label>
+            <input id="name" type="text" name="name" placeholder="Enter your name" required /> 
+            <br>
+            <label id="email-label"> Email </label>
+            <input id="email" type="email" name="email" placeholder="Enter your email" required />
+            <br>
+            <label id="number-label"> Age (optional) </label>
+            <input id="number" type="number" name="age" placeholder="Age" min="10" max="100"/>
+          </div>
+          <div id="form-group">
+            <p class="input-label">Which option best describes your reading routines?</p>
+            <select id="dropdown" required>
+              <option disabled selected value>Select your reading routine</option>
+              <option>Assiduous reader</option>
+              <option>Sporadic reader</option>
+              <option>Beginner</option>
+            </select>
+          </div>
+          <div id="form-group">
+            <p class="input-label">Would you recommend a book club to beginner readers?</p>
+            <label>
+              <input type="radio" name="recomendation" value="Sure" required /> Sure
+            </label>
+            <br>
+            <label>
+              <input type="radio" name="recomendation" value="Maybe" /> Maybe
+            </label>
+            <br>
+            <label>
+              <input type="radio" name="recomendation" value="Not at all" /> Not at all
+            </label>
+            </div>
+            <div id="form-group">
+            <p class="input-label">What Literary Genres do you prefer? <span>(Check all that apply)</span></p>
+            <label> <input type="checkbox" value="Fiction" name="preference"/> Fiction</label>
+            <br>
+            <label> <input type="checkbox" value="Science-Fiction" name="preference" /> Science Fiction</label>
+            <br>
+            <label> <input type="checkbox" value="Mystery" name="preference" /> Mystery</label>
+            <br>
+            <label> <input type="checkbox" value="Thriller" name="preference" /> Thriller</label>
+            <br>
+            <label> <input type="checkbox" value="Horror" name="preference" /> Horror</label>
+            <br>
+            <label> <input type="checkbox" value="Historical" name="preference" /> Historical</label>
+            <br>
+            <label> <input type="checkbox" value="Romance" name="preference" /> Romance</label>
+            <br>
+            <label> <input type="checkbox" value="Fantasy" name="preference" /> Fantasy</label>
+            <br>
+            <label> <input type="checkbox" value="Fantasy" name="preference" checked/> Neither of them</label>
+          </div>
+          <div id="form-group">
+            <p class="input-label"> In your opinion, what should be done in a book club?</p>
+            <label><textarea name="opinion" rows="8" cols="40" placeholder="Leave your comment"></textarea></label>
+          </div>
+            <button type="submit" id="submit"> Submit </button>
+        </form>
+      </main>
+    </div>
+  </body>
+</html>
